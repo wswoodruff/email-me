@@ -31,7 +31,21 @@ module.exports = new Confidence.Store({
         plugins: [
             {
                 plugin: '../lib', // Main plugin
-                options: {}
+                options: {
+                    email: {  // Any nodemailer transport options will work here
+                        nodemailer: {
+                            host: process.env.EMAIL_HOST,
+                            port: process.env.EMAIL_PORT,
+                            secure: process.env.EMAIL_PORT === '465',
+                            requireTLS: process.env.EMAIL_PORT === '465',
+                            auth: {
+                                user: process.env.EMAIL_USER,
+                                pass: process.env.EMAIL_PASS
+                            }
+                        },
+                        from: process.env.EMAIL_FROM
+                    },
+                }
             },
             {
                 plugin: {
