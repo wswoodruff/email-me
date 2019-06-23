@@ -44,7 +44,7 @@ module.exports = new Confidence.Store({
                             }
                         },
                         from: process.env.EMAIL_FROM
-                    },
+                    }
                 }
             },
             {
