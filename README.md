@@ -1,7 +1,6 @@
 # email-me
 
-Fill out the `.env` file to send emails from an address you control (Nodemailer settings)
-- See `server/.env-keep` for what you'll need to fill out
+Fill out the `.env` file with your Nodemailer settings. See `server/.env-keep` for an example.
 
 ## Usage
 > Please see the [API Reference](./API.md)
