@@ -11,7 +11,7 @@ Run the default command to send a simple email
 `hpal run email-me:text <carrier> <to> <message>`
 
 Many phone carriers have an email address you can adapt to text a number on their network.
-Supported carriers:
+Supported carrier values:
 
 - verizon
 - tmobile
