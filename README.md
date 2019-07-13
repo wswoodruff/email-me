@@ -6,5 +6,5 @@ Fill out the `.env` file to send emails from an address you control (Nodemailer 
 ### hpal command
 
 ```sh
-hpal run email-me buggyutils@gmail.com 'Testing!!'
+hpal run email-me email@example.com 'Hello Friend!'
 ```
